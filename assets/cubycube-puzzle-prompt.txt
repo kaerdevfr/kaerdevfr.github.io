@@ -1,0 +1,5 @@
+Tool: built-in image_gen
+Reference: ~/Documents/cubecube/Assets/CubeCube/Resources/LevelTransitionLogo.png
+Output: assets/cubycube-puzzle.png
+
+Use case: compositing. Create a square 1024x1024 promotional game icon for a portfolio project card. Input image is the existing CubyCube puzzle logo; preserve its exact readable lettering, colorful glossy letters, large blue cube and yellow/indigo outlines. Place the complete uncropped logo centered with generous safe margins, occupying about 75% width. Replace the background with a colorful soft-focus dreamy gradient using cyan, blue, violet and pink drawn from the logo. In the background around the logo, glossy colorful toy cubes fly toward the camera: small distant cubes near center, larger cubes near the outer edges, perspective depth and subtle directional motion blur, foreground edge cubes slightly out of focus. Logo crisp and dominant, no cube obscuring lettering. Full square colorful background, no transparent corners, no extra words or watermark. Polished playful mobile puzzle game artwork.
