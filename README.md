@@ -6,5 +6,5 @@ Static website for KaerDev, published with GitHub Pages.
 
 - `index.html`
 - `mentions-legales.html`
+- `privacy.html` — CubyCube Puzzle (current version)
 - `privacy-skysquito.html`
-
