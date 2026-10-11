@@ -1,41 +1,42 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#191b1e" />
-    <title>KAER — Studio indépendant de jeux mobiles</title>
+    <title data-fr="KAER — Studio indépendant de jeux mobiles" data-en="KAER — Independent mobile game studio">KAER — Independent mobile game studio</title>
     <meta
       name="description"
-      content="KAER, studio indépendant de jeux mobiles. Découvrez Skysquito et CubyCube Puzzle, nos jeux mobiles."
+      content="KAER, an independent mobile game studio. Discover our games: Rivet Rush, Brick Pop!, CubyCube Puzzle and Skysquito." data-fr-content="KAER, studio indépendant de jeux mobiles. Découvrez nos jeux : Rivet Rush, Brick Pop!, CubyCube Puzzle et Skysquito." data-en-content="KAER, an independent mobile game studio. Discover our games: Rivet Rush, Brick Pop!, CubyCube Puzzle and Skysquito."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <script src="language.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="KAER, accueil"
+      <a class="brand" href="index.html" aria-label="KAER, home" data-fr-aria-label="KAER, accueil" data-en-aria-label="KAER, home"
         ><img src="assets/kaer-mountain.svg" alt=""
       /></a>
-      <nav aria-label="Navigation principale">
-        <a href="#projects">Projets</a><a href="#contact">Contact</a>
+      <nav aria-label="Main navigation" data-fr-aria-label="Navigation principale" data-en-aria-label="Main navigation">
+        <a href="#projects" data-fr="Projets" data-en="Games">Games</a><a href="#contact">Contact</a>
       </nav>
+      <div class="language-switch" role="group" aria-label="Language" data-fr-aria-label="Langue" data-en-aria-label="Language">
+        <button type="button" data-set-language="en" lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-language="fr" lang="fr" aria-pressed="false">Français</button>
+      </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-topline">
-          <span>Studio indépendant de jeux mobiles</span
-          ><span>France / 2026</span>
+          <span data-fr="Studio indépendant de jeux mobiles" data-en="Independent mobile game studio">Independent mobile game studio</span><span>France / 2026</span>
         </div>
         <h1 id="hero-title" class="hero-logo">
           <img src="assets/kaer-white.svg" alt="KAER" />
         </h1>
         <div class="hero-bottom">
-          <p>Téléchargez, jouez,<br />et amusez-vous !</p>
-          <a href="#projects" class="text-link"
-            >Découvrir nos projets <span aria-hidden="true">↗</span></a
-          >
+          <p data-fr="Téléchargez, jouez,&lt;br /&gt;et amusez-vous !" data-en="Download, play,&lt;br /&gt;and have fun!">Download, play,<br />and have fun!</p>
         </div>
       </section>
 
@@ -45,24 +46,21 @@
         aria-labelledby="projects-title"
       >
         <div class="section-heading">
-          <p id="projects-title" class="eyebrow">Nos jeux</p>
+          <p id="projects-title" class="eyebrow" data-fr="Nos jeux" data-en="Games">Games</p>
         </div>
-        <article id="cubycube" class="project">
+        <article id="rivet-rush" class="project">
           <div class="project-art">
             <img
-              src="assets/cubycube-puzzle.png"
-              alt="Logo CubyCube Puzzle sur un fond coloré avec des cubes en perspective"
+              src="assets/rivet-rush-icon.png"
+              alt="Rivet Rush game icon" data-fr-alt="Icône du jeu Rivet Rush" data-en-alt="Rivet Rush game icon"
             />
           </div>
           <div class="project-copy">
             <div class="project-meta">
-              <span>Jeu mobile / Puzzle</span><span>02</span>
+              <span data-fr="Jeu mobile / Action / Défense" data-en="Mobile game / Action / Defense">Mobile game / Action / Defense</span><span>04</span>
             </div>
-            <h3>CubyCube Puzzle</h3>
-            <p>
-              Un univers de cubes et de couleurs à découvrir. CubyCube Puzzle
-              est en cours de développement.
-            </p>
+            <h3>Rivet Rush</h3>
+            <p data-fr="Pilotez votre robot entre plusieurs postes d’armes pour défendre votre base. Repoussez les vagues ennemies et déclenchez vos attaques spéciales au bon moment." data-en="Move your robot between weapon stations to defend your base. Repel waves of enemies and unleash your special attacks at just the right moment.">Move your robot between weapon stations to defend your base. Repel waves of enemies and unleash your special attacks at just the right moment.</p>
             <div class="actions">
               <span
                 ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -87,24 +85,102 @@
                 >iOS</span
               >
               <span class="project-status project-status-development"
-                >En développement</span
+                 data-fr="En développement" data-en="In development">In development</span>
+            </div>
+          </div>
+        </article>
+        <article id="brick-pop" class="project">
+          <div class="project-art">
+            <img
+              src="assets/brick-pop-icon.png"
+              alt="Brick Pop! game icon" data-fr-alt="Icône du jeu Brick Pop!" data-en-alt="Brick Pop! game icon"
+            />
+          </div>
+          <div class="project-copy">
+            <div class="project-meta">
+              <span data-fr="Jeu mobile / Puzzle" data-en="Mobile game / Puzzle">Mobile game / Puzzle</span><span>03</span>
+            </div>
+            <h3>Brick Pop!</h3>
+            <p data-fr="Libérez les boulets, alimentez vos canons et détruisez les briques de même couleur. Anticipez vos coups et gérez la place sur le tapis pour venir à bout de chaque mur." data-en="Release cannonballs, load your cannons and blast matching bricks. Plan your moves and manage space on the conveyor belt to clear every wall.">Release cannonballs, load your cannons and blast matching bricks. Plan your moves and manage space on the conveyor belt to clear every wall.</p>
+            <div class="actions">
+              <span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.1 7.5 4.7 5.1m13.2 2.4 1.4-2.4M5 10a7 7 0 0 1 14 0v1H5v-1Zm1 3h12v5a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-5Zm-3 0v5m18-5v5M9 20v2m6-2v2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="9" cy="9" r=".8" fill="currentColor" />
+                  <circle cx="15" cy="9" r=".8" fill="currentColor" /></svg
+                >Android</span
               >
+              <span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M16.6 2.1c-.2 1.7-1.5 3.2-3.2 3.3.1-1.8 1.5-3.2 3.2-3.3ZM12 6.4c1.3 0 2-.7 3.4-.7 1.5 0 2.7.8 3.4 2-2.9 1.7-2.5 5.8.5 7-.5 1.4-1.2 2.7-2.1 3.8-.8 1-1.5 1.8-2.5 1.8s-1.4-.6-2.7-.6-1.8.6-2.7.6-1.7-.9-2.6-2c-2-2.6-3.5-7.4-1.5-10.6a5 5 0 0 1 4.2-2.3c1.2 0 2.2.7 2.6.7Z"
+                    fill="currentColor"
+                  /></svg
+                >iOS</span
+              >
+              <span class="project-status project-status-development"
+                 data-fr="En développement" data-en="In development">In development</span>
+            </div>
+          </div>
+        </article>
+        <article id="cubycube" class="project">
+          <div class="project-art">
+            <img
+              src="assets/cubycube-puzzle.png"
+              alt="CubyCube Puzzle logo on a colorful background with cubes in perspective" data-fr-alt="Logo CubyCube Puzzle sur un fond coloré avec des cubes en perspective" data-en-alt="CubyCube Puzzle logo on a colorful background with cubes in perspective"
+            />
+          </div>
+          <div class="project-copy">
+            <div class="project-meta">
+              <span data-fr="Jeu mobile / Puzzle" data-en="Mobile game / Puzzle">Mobile game / Puzzle</span><span>02</span>
+            </div>
+            <h3>CubyCube Puzzle</h3>
+            <p data-fr="Un univers de cubes et de couleurs à découvrir. CubyCube Puzzle est en cours de développement." data-en="Discover a world of cubes and colors. CubyCube Puzzle is currently in development.">Discover a world of cubes and colors. CubyCube Puzzle is currently in development.</p>
+            <div class="actions">
+              <span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6.1 7.5 4.7 5.1m13.2 2.4 1.4-2.4M5 10a7 7 0 0 1 14 0v1H5v-1Zm1 3h12v5a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-5Zm-3 0v5m18-5v5M9 20v2m6-2v2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="9" cy="9" r=".8" fill="currentColor" />
+                  <circle cx="15" cy="9" r=".8" fill="currentColor" /></svg
+                >Android</span
+              >
+              <span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M16.6 2.1c-.2 1.7-1.5 3.2-3.2 3.3.1-1.8 1.5-3.2 3.2-3.3ZM12 6.4c1.3 0 2-.7 3.4-.7 1.5 0 2.7.8 3.4 2-2.9 1.7-2.5 5.8.5 7-.5 1.4-1.2 2.7-2.1 3.8-.8 1-1.5 1.8-2.5 1.8s-1.4-.6-2.7-.6-1.8.6-2.7.6-1.7-.9-2.6-2c-2-2.6-3.5-7.4-1.5-10.6a5 5 0 0 1 4.2-2.3c1.2 0 2.2.7 2.6.7Z"
+                    fill="currentColor"
+                  /></svg
+                >iOS</span
+              >
+              <span class="project-status project-status-development"
+                 data-fr="En développement" data-en="In development">In development</span>
             </div>
           </div>
         </article>
         <article class="project">
           <div class="project-art">
-            <img src="assets/skysquito-icon.png" alt="Icône du jeu Skysquito" />
+            <img src="assets/skysquito-icon.png?v=2" alt="Skysquito game icon" data-fr-alt="Icône du jeu Skysquito" data-en-alt="Skysquito game icon" />
           </div>
           <div class="project-copy">
             <div class="project-meta">
-              <span>Jeu mobile / Arcade</span><span>01</span>
+              <span data-fr="Jeu mobile / Arcade" data-en="Mobile game / Arcade">Mobile game / Arcade</span><span>01</span>
             </div>
             <h3>Skysquito</h3>
-            <p>
-              Guidez votre moustique entre les obstacles. Débloquez des skins et
-              des effets, passez en mode turbo et grimpez dans le classement.
-            </p>
+            <p data-fr="Guidez votre moustique entre les obstacles. Débloquez des skins et des effets, passez en mode turbo et grimpez dans le classement." data-en="Guide your mosquito through obstacles. Unlock skins and effects, activate turbo mode and climb the leaderboard.">Guide your mosquito through obstacles. Unlock skins and effects, activate turbo mode and climb the leaderboard.</p>
             <div class="actions">
               <span
                 ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -129,8 +205,7 @@
                 >iOS</span
               >
               <span class="project-status project-status-available"
-                >Disponible</span
-              >
+                 data-fr="Disponible" data-en="Available">Available</span>
             </div>
           </div>
         </article>
@@ -142,7 +217,7 @@
         aria-labelledby="contact-title"
       >
         <div>
-          <p class="eyebrow">Une idée, une question ?</p>
+          <p class="eyebrow" data-fr="Une idée, une question ?" data-en="An idea or a question?">An idea or a question?</p>
           <h2 id="contact-title">Contact</h2>
         </div>
         <a class="contact-link" href="mailto:kaerdev@proton.me"
@@ -154,8 +229,7 @@
     <footer>
       <span>© 2026 KAER</span>
       <div>
-        <a href="mentions-legales.html">Mentions légales</a
-        ><a href="privacy.html">Confidentialité</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Legal notice</a><a href="privacy.html" data-fr="Confidentialité" data-en="Privacy">Privacy</a>
       </div>
     </footer>
   </body>

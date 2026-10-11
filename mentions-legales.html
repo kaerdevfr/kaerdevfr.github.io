@@ -1,71 +1,59 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mentions legales - KaerDev</title>
-    <meta name="description" content="Mentions legales du site KaerDev." />
-    <link rel="stylesheet" href="styles.css" />
+    <title data-fr="Mentions légales - KaerDev" data-en="Legal notice - KaerDev">Legal notice - KaerDev</title>
+    <meta name="description" content="Legal notice for the KaerDev website." data-fr-content="Mentions légales du site KaerDev." data-en-content="Legal notice for the KaerDev website." />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <script src="language.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="KaerDev">
         <img src="assets/kaer-mountain.svg" alt="" />
       </a>
-      <nav aria-label="Navigation principale">
-        <a href="index.html#projects">Projets</a>
-        <a href="privacy-skysquito.html">Confidentialite</a>
-        <a href="mentions-legales.html">Mentions legales</a>
+      <nav aria-label="Main navigation" data-fr-aria-label="Navigation principale" data-en-aria-label="Main navigation">
+        <a href="index.html#projects" data-fr="Projets" data-en="Games">Games</a>
+        <a href="privacy.html" data-fr="Confidentialité" data-en="Privacy">Privacy</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Legal notice</a>
       </nav>
+      <div class="language-switch" role="group" aria-label="Language" data-fr-aria-label="Langue" data-en-aria-label="Language">
+        <button type="button" data-set-language="en" lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-language="fr" lang="fr" aria-pressed="false">Français</button>
+      </div>
     </header>
 
     <main class="legal">
-      <p class="eyebrow">Informations legales</p>
-      <h1>Mentions legales</h1>
+      <p class="eyebrow" data-fr="Informations légales" data-en="Legal information">Legal information</p>
+      <h1 data-fr="Mentions légales" data-en="Legal notice">Legal notice</h1>
 
-      <!-- <section>
-        <h2>Editeur du site</h2>
-        <p>
-          KaerDev<br />
-          <span class="placeholder">Nom / prenom ou denomination a completer</span><br />
-          <span class="placeholder">Statut juridique a completer</span><br />
-          <span class="placeholder">SIRET a completer</span><br />
-          <span class="placeholder">Adresse de domiciliation a completer</span>
-        </p>
-      </section> -->
 
       <section>
         <h2>Contact</h2>
         <p>
-          Email :
+          Email:
           <a href="mailto:kaerdev@proton.me">kaerdev@proton.me</a>
         </p>
       </section>
 
       <section>
-        <h2>Hebergement</h2>
-        <p>
-          Ce site est heberge par GitHub Pages, service fourni par GitHub, Inc.,
-          88 Colin P. Kelly Jr Street, San Francisco, CA 94107, Etats-Unis.
-        </p>
+        <h2 data-fr="Hébergement" data-en="Hosting">Hosting</h2>
+        <p data-fr="Ce site est hébergé par GitHub Pages, service fourni par GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis." data-en="This website is hosted by GitHub Pages, a service provided by GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, United States.">This website is hosted by GitHub Pages, a service provided by GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, United States.</p>
       </section>
 
       <section>
-        <h2>Propriete intellectuelle</h2>
-        <p>
-          Les contenus presents sur ce site, incluant textes, visuels, logos et
-          elements graphiques, sont proteges par le droit de la propriete
-          intellectuelle. Toute reproduction non autorisee est interdite.
-        </p>
+        <h2 data-fr="Propriété intellectuelle" data-en="Intellectual property">Intellectual property</h2>
+        <p data-fr="Les contenus présents sur ce site, incluant textes, visuels, logos et éléments graphiques, sont protégés par le droit de la propriété intellectuelle. Toute reproduction non autorisée est interdite." data-en="The content on this website, including text, images, logos and graphics, is protected by intellectual property law. Unauthorized reproduction is prohibited.">The content on this website, including text, images, logos and graphics, is protected by intellectual property law. Unauthorized reproduction is prohibited.</p>
       </section>
     </main>
 
     <footer>
       <span>© 2026 KaerDev</span>
       <div>
-        <a href="index.html">Accueil</a>
-        <a href="privacy-skysquito.html">Politique de confidentialite</a>
+        <a href="index.html" data-fr="Accueil" data-en="Home">Home</a>
+        <a href="privacy.html" data-fr="Politique de confidentialité" data-en="Privacy policy">Privacy policy</a>
       </div>
     </footer>
   </body>

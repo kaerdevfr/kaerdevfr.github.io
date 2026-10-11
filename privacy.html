@@ -4,29 +4,34 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>KAER Games Privacy Policy - KaerDev</title>
+    <title data-en="KAER Games Privacy Policy - KaerDev" data-fr="Politique de confidentialité des jeux KAER - KaerDev">KAER Games Privacy Policy - KaerDev</title>
     <meta
       name="description"
-      content="Privacy policy for KAER mobile games. Politique de confidentialité des jeux mobiles KAER."
+      content="Privacy policy for KAER mobile games." data-en-content="Privacy policy for KAER mobile games." data-fr-content="Politique de confidentialité des jeux mobiles KAER."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <script src="language.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="KaerDev">
         <img src="assets/kaer-mountain.svg" alt="" />
       </a>
-      <nav lang="fr" aria-label="Navigation principale">
-        <a href="index.html#projects">Projets</a>
-        <a href="privacy.html" aria-current="page">Confidentialité</a>
-        <a href="mentions-legales.html">Mentions légales</a>
+      <nav aria-label="Main navigation" data-fr-aria-label="Navigation principale" data-en-aria-label="Main navigation">
+        <a href="index.html#projects" data-fr="Projets" data-en="Games">Games</a>
+        <a href="privacy.html" aria-current="page" data-fr="Confidentialité" data-en="Privacy">Privacy</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Legal notice</a>
       </nav>
+      <div class="language-switch" role="group" aria-label="Language" data-fr-aria-label="Langue" data-en-aria-label="Language">
+        <button type="button" data-set-language="en" lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-language="fr" lang="fr" aria-pressed="false">Français</button>
+      </div>
     </header>
 
     <main class="legal">
       <p class="eyebrow">KAER</p>
+      <div id="en" lang="en" data-language="en">
       <h1>Privacy Policy</h1>
-      <p lang="fr"><a href="#fr">Lire la version française</a></p>
 
       <section>
         <h2>About this policy</h2>
@@ -80,9 +85,9 @@
         <p>This policy may be updated as our games and services evolve. New data uses or providers not described here will be reflected in an updated policy before the corresponding processing starts. The date below identifies the latest revision.</p>
       </section>
 
-      <hr />
+      </div>
 
-      <div id="fr" lang="fr">
+      <div id="fr" lang="fr" data-language="fr" hidden>
         <h1>Politique de confidentialité</h1>
       <section>
         <h2>Objet</h2>
@@ -138,16 +143,16 @@
       </div>
 
       <section>
-        <h2><span lang="fr">Mise à jour</span> / Last updated</h2>
-        <p><time datetime="2026-10-09"><span lang="fr">9 octobre 2026</span> / October 9, 2026.</time></p>
+        <h2 data-en="Last updated" data-fr="Mise à jour">Last updated</h2>
+        <p><time datetime="2026-10-09"><span data-en="October 9, 2026" data-fr="9 octobre 2026">October 9, 2026</span></time></p>
       </section>
     </main>
 
-    <footer lang="fr">
+    <footer>
       <span>© 2026 KaerDev</span>
       <div>
-        <a href="index.html">Accueil</a>
-        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="index.html" data-fr="Accueil" data-en="Home">Home</a>
+        <a href="mentions-legales.html" data-fr="Mentions légales" data-en="Legal notice">Legal notice</a>
       </div>
     </footer>
   </body>
