@@ -7,7 +7,7 @@
     document.querySelectorAll('[data-en][data-fr]').forEach((element) => {
       element.innerHTML = element.dataset[language];
     });
-    for (const attribute of ['alt', 'aria-label', 'content']) {
+    for (const attribute of ['alt', 'aria-label', 'content', 'src', 'href']) {
       document.querySelectorAll(`[data-en-${attribute}]`).forEach((element) => {
         element.setAttribute(attribute, element.getAttribute(`data-${language}-${attribute}`));
       });

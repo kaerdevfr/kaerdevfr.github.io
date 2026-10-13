@@ -10,8 +10,9 @@
       name="description"
       content="KAER, an independent mobile game studio. Discover our games: Rivet Rush, Brick Pop!, CubyCube Puzzle and Skysquito." data-fr-content="KAER, studio indépendant de jeux mobiles. Découvrez nos jeux : Rivet Rush, Brick Pop!, CubyCube Puzzle et Skysquito." data-en-content="KAER, an independent mobile game studio. Discover our games: Rivet Rush, Brick Pop!, CubyCube Puzzle and Skysquito."
     />
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <script src="language.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <script src="language.js?v=2" defer></script>
+    <script src="media.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -88,6 +89,10 @@
                  data-fr="En développement" data-en="In development">In development</span>
             </div>
           </div>
+          <div class="project-media" data-youtube-id="" data-video-format="landscape" hidden>
+            <div class="media-gallery">
+            </div>
+          </div>
         </article>
         <article id="brick-pop" class="project">
           <div class="project-art">
@@ -127,6 +132,10 @@
               >
               <span class="project-status project-status-development"
                  data-fr="En développement" data-en="In development">In development</span>
+            </div>
+          </div>
+          <div class="project-media" data-youtube-id="" data-video-format="landscape" hidden>
+            <div class="media-gallery">
             </div>
           </div>
         </article>
@@ -170,8 +179,21 @@
                  data-fr="En développement" data-en="In development">In development</span>
             </div>
           </div>
+          <div class="project-media" data-youtube-id="DNDZXatn4mA" data-video-format="portrait" data-video-sped-up="true">
+            <div class="media-gallery">
+              <a class="media-shot" href="assets/cubycube/screenshot-1-en.jpg" data-en-href="assets/cubycube/screenshot-1-en.jpg" data-fr-href="assets/cubycube/screenshot-1-fr.jpg">
+                <img src="assets/cubycube/screenshot-1-en.jpg" data-en-src="assets/cubycube/screenshot-1-en.jpg" data-fr-src="assets/cubycube/screenshot-1-fr.jpg" alt="CubyCube Puzzle — Free the cubes" data-en-alt="CubyCube Puzzle — Free the cubes" data-fr-alt="CubyCube Puzzle — Libérez les cubes" width="647" height="1400" loading="lazy" />
+              </a>
+              <a class="media-shot" href="assets/cubycube/screenshot-2-en.jpg" data-en-href="assets/cubycube/screenshot-2-en.jpg" data-fr-href="assets/cubycube/screenshot-2-fr.jpg">
+                <img src="assets/cubycube/screenshot-2-en.jpg" data-en-src="assets/cubycube/screenshot-2-en.jpg" data-fr-src="assets/cubycube/screenshot-2-fr.jpg" alt="CubyCube Puzzle — Solve puzzles" data-en-alt="CubyCube Puzzle — Solve puzzles" data-fr-alt="CubyCube Puzzle — Résolvez les puzzles" width="647" height="1400" loading="lazy" />
+              </a>
+              <a class="media-shot" href="assets/cubycube/screenshot-3-en.jpg" data-en-href="assets/cubycube/screenshot-3-en.jpg" data-fr-href="assets/cubycube/screenshot-3-fr.jpg">
+                <img src="assets/cubycube/screenshot-3-en.jpg" data-en-src="assets/cubycube/screenshot-3-en.jpg" data-fr-src="assets/cubycube/screenshot-3-fr.jpg" alt="CubyCube Puzzle — Challenge your mind" data-en-alt="CubyCube Puzzle — Challenge your mind" data-fr-alt="CubyCube Puzzle — Challengez votre esprit" width="647" height="1400" loading="lazy" />
+              </a>
+            </div>
+          </div>
         </article>
-        <article class="project">
+        <article id="skysquito" class="project">
           <div class="project-art">
             <img src="assets/skysquito-icon.png?v=2" alt="Skysquito game icon" data-fr-alt="Icône du jeu Skysquito" data-en-alt="Skysquito game icon" />
           </div>
@@ -208,6 +230,10 @@
                  data-fr="Disponible" data-en="Available">Available</span>
             </div>
           </div>
+          <div class="project-media" data-youtube-id="" data-video-format="landscape" hidden>
+            <div class="media-gallery">
+            </div>
+          </div>
         </article>
       </section>
 
@@ -225,6 +251,11 @@
         >
       </section>
     </main>
+
+    <dialog class="media-dialog" aria-label="Game preview" data-en-aria-label="Game preview" data-fr-aria-label="Aperçu du jeu">
+      <button class="media-close" type="button" aria-label="Close" data-en-aria-label="Close" data-fr-aria-label="Fermer">×</button>
+      <div class="media-preview"></div>
+    </dialog>
 
     <footer>
       <span>© 2026 KAER</span>
